@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FGxZUa+S5fzY5FHd3EGG506l/SbLso0X3m8HP75BCr0=",
+  "Source": "crud-cassandra",
+  "BasePath": "_content/crud-cassandra",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

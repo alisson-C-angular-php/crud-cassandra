@@ -1,0 +1,74 @@
+[
+  {
+    "ContainingType": "crud_cassandra.Controllers.ClasseController",
+    "Method": "Get",
+    "RelativePath": "Classe",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[crud_cassandra.Model.Classe, crud-cassandra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetClasse"
+  },
+  {
+    "ContainingType": "crud_cassandra.Controllers.ClasseController",
+    "Method": "Post",
+    "RelativePath": "Classe",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aluno",
+        "Type": "crud_cassandra.Model.Classe",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "PostClasse"
+  },
+  {
+    "ContainingType": "crud_cassandra.Controllers.ClasseController",
+    "Method": "Put",
+    "RelativePath": "Classe",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aluno",
+        "Type": "crud_cassandra.Model.Classe",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "PutClasse"
+  },
+  {
+    "ContainingType": "crud_cassandra.Controllers.ClasseController",
+    "Method": "Delete",
+    "RelativePath": "Classe",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aluno",
+        "Type": "crud_cassandra.Model.Classe",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "PutClasse"
+  }
+]

@@ -1,0 +1,20 @@
+version: '3'
+services:
+  cassandra:
+    image: cassandra:latest
+    environment:
+      - CASSANDRA_USER=root
+      - CASSANDRA_PASSWORD=password
+    ports:
+      - "9042:9042"
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+    networks:
+      - cassandra_network
+
+volumes:
+  cassandra_data:
+
+networks:
+  cassandra_network:
+    driver: bridge

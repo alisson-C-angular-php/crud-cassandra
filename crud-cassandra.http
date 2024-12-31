@@ -1,0 +1,6 @@
+@crud_cassandra_HostAddress = http://localhost:5174
+
+GET {{crud_cassandra_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
