@@ -1,0 +1,34 @@
+-- Criação do keyspace
+CREATE KEYSPACE IF NOT EXISTS classe 
+WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3};
+
+-- Seleção do keyspace
+USE classe;
+
+-- Criação da tabela aluno
+CREATE TABLE IF NOT EXISTS aluno (
+    id int PRIMARY KEY,
+    nome text,
+    sobrenome text
+);
+
+-- Inserção de dados na tabela aluno
+INSERT INTO aluno (id, nome, sobrenome) VALUES (2, 'Bruna', 'Silva');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (3, 'Carlos', 'Santos');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (4, 'Daniela', 'Oliveira');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (5, 'Eduardo', 'Lima');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (6, 'Fernanda', 'Costa');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (7, 'Gabriel', 'Martins');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (8, 'Helena', 'Alves');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (9, 'Isabela', 'Rodrigues');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (10, 'João', 'Barbosa');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (11, 'Karen', 'Melo');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (12, 'Lucas', 'Ferreira');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (13, 'Mariana', 'Dias');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (14, 'Natália', 'Vieira');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (15, 'Otávio', 'Souza');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (16, 'Patrícia', 'Pereira');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (17, 'Rafael', 'Carvalho');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (18, 'Sofia', 'Moreira');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (19, 'Thiago', 'Gomes');
+INSERT INTO aluno (id, nome, sobrenome) VALUES (20, 'Vanessa', 'Monteiro');

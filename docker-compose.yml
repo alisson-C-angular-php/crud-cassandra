@@ -1,4 +1,3 @@
-version: '3'
 services:
   cassandra:
     image: cassandra:latest
@@ -9,8 +8,10 @@ services:
       - "9042:9042"
     volumes:
       - cassandra_data:/var/lib/cassandra
+      - ./Db:/docker-entrypoint-initdb.d 
     networks:
       - cassandra_network
+    command: ["bash", "-c", "docker-entrypoint.sh cassandra & sleep 90 && cqlsh -f /docker-entrypoint-initdb.d/create_db.cqlsh && tail -f /dev/null"]
 
 volumes:
   cassandra_data:
